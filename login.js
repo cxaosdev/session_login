@@ -19,17 +19,17 @@ function login() {
   const userId = idInput.value;
   const userPassword = passwordInput.value;
 
-  return axios.post("http://localhost:3000", { userId, userPassword });
+  return axios.post("http://localhost:5500", { userId, userPassword });
 }
 
 // 로그아웃 함수
 function logout() {
-  return axios.delete("http://localhost:3000");
+  return axios.delete("http://localhost:5500");
 }
 
 // 유저 정보를 받아오는 함수
 function getUserInfo() {
-  return axios.get("http://localhost:3000");
+  return axios.get("http://localhost:5500");
 }
 
 // 유저 정보를 렌더링 시키는 함수
